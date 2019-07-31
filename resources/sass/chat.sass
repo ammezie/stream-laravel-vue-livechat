@@ -1,0 +1,72 @@
+#chat
+    font-family: arial
+    .c-chat
+        &-widget
+            bottom: calc(50px + 30px + 50px)
+            display: block
+            opacity: 0
+            position: fixed
+            right: 50px
+            transform: translate(100%, 100%)
+            transition: .5s
+            z-index: 5000
+            &.show
+                opacity: 1
+                transform: translate(0)
+            &-content
+                background: #eee
+                box-shadow: 0 10px 30px rgba(#000, .2)
+                border-radius: 3px
+                max-width: 100%
+                overflow: hidden
+                width: 400px
+            &-header
+                background: #007bff
+                color: #fff
+                padding: 10px 15px
+            &-body
+                padding: 10px 15px
+            &-footer
+                padding: 10px 15px
+            &-button
+                border-radius: 999px
+                bottom: 50px
+                cursor: pointer
+                height: 50px
+                line-height: 50px
+                padding: 0
+                position: fixed
+                right: 50px
+                text-align: center
+                width: 50px
+                z-index: 5050
+            &-text
+                border: 1px solid #eee
+                border-radius: 3px
+                height: 100px
+                outline: none !important
+                padding: 10px 20px
+                width: 100%
+            &-bubble
+                background: #fff
+                border-radius: 3px
+                box-shadow: 0 3px 10px rgba(#000, .1)
+                margin-bottom: 15px
+                max-width: 96%
+                padding: 10px
+                &-icon
+                    border-radius: 3px
+                    color: #aaa
+                    display: inline-block
+                    flex: 0 0 30px
+                    font-size: 12px
+                    font-weight: 900
+                    margin-right: 10px
+                    text-align: center
+                    vertical-align: middle
+                &-text
+                    border-left: 2px solid #aaa
+                    display: block
+                    margin-top: 15px
+                    padding: 10px 20px
+                    vertical-align: middle
